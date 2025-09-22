@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH44 - Kayıt Ol</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="logo-section">
+                <img src="a-close-up-playboy-rabbit-logo-with-the-_JAGxHdOURI-VVZs_ma2EfQ_UE5nme7fRK2rXdq9_TESyg.jpeg" alt="SH44 Logo" class="logo">
+                <h1 class="brand-name">SH44</h1>
+            </div>
+            
+            <div class="form-section">
+                <h2 class="form-title">Hesap Oluştur</h2>
+                <p class="form-subtitle">SH44'e katılın</p>
+                
+                <form id="registerForm" class="auth-form">
+                    <div class="input-group">
+                        <label for="fullName">Ad Soyad</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="confirmPassword">Şifre Tekrar</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="terms" required>
+                            <span class="checkmark"></span>
+                            <a href="#" class="link">Kullanım şartlarını</a> kabul ediyorum
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Kayıt Ol</button>
+                </form>
+                
+                <div class="form-footer">
+                    <p>Zaten hesabınız var mı? <a href="login.html" class="link">Giriş yapın</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

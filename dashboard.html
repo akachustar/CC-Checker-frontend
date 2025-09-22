@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH44 - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <!-- Settings Section -->
+            <div class="sidebar-section">
+                <div class="settings-container">
+                    <div class="settings-icon">
+                        <span class="material-icons">settings</span>
+                    </div>
+                    <div class="settings-dropdown">
+                        <div class="dropdown-header">
+                            <span class="material-icons">palette</span>
+                            <span>Theme</span>
+                        </div>
+                        <div class="theme-options">
+                            <button class="theme-btn active" data-theme="dark">
+                                <span class="material-icons">dark_mode</span>
+                                <span>Dark</span>
+                            </button>
+                            <button class="theme-btn" data-theme="light">
+                                <span class="material-icons">light_mode</span>
+                                <span>Light</span>
+                            </button>
+                            <button class="theme-btn" data-theme="auto">
+                                <span class="material-icons">brightness_auto</span>
+                                <span>Auto</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="contact-icon">
+                    <span class="material-icons">telegram</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vertical Divider -->
+        <div class="sidebar-divider"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="nav-content">
+            <!-- Control Panel -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">space_dashboard</span>
+                    <span>Control Panel</span>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">miscellaneous_services</span>
+                    <span>Services</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">credit_card</span>
+                        <span>Card Checker</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">edit_note</span>
+                        <span>Card Formatter</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">credit_score</span>
+                        <span>BIN Lookup</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wallet -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">account_balance_wallet</span>
+                    <span>Wallet</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">shopping_bag</span>
+                        <span>Buy Credits</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">attach_money</span>
+                        <span>Add Balance</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">receipt</span>
+                        <span>Transactions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">info</span>
+                    <span>Information</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">support_agent</span>
+                        <span>Help Desk</span>
+                        <span class="material-icons expand-icon">expand_more</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">settings_account_box</span>
+                        <span>Account Settings</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">description</span>
+                        <span>Terms Of Service</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <img src="a-close-up-playboy-rabbit-logo-with-the-_JAGxHdOURI-VVZs_ma2EfQ_UE5nme7fRK2rXdq9_TESyg.jpeg" alt="SH44 Logo" class="header-logo">
+            </div>
+            
+            <div class="user-section">
+                <div class="user-info">
+                    <span class="username">Admin</span>
+                    <button class="sign-out-btn">
+                        <span class="material-icons">logout</span>
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <h2>Control Panel</h2>
+            
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h3>Hello Admin</h3>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">1,247</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discord Notice -->
+            <div class="discord-notice">
+                <span class="material-icons">campaign</span>
+                Please don't forget join our discord channel
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="material-icons">today</span>
+                        <h4>Today Card Check</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-stat">
+                            <span class="number">2,847</span>
+                            <span class="label">Cards Checked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="material-icons">loyalty</span>
+                        <h4>Loyalty Level</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="loyalty-level">
+                            <span class="level">Premium</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="material-icons">account_balance_wallet</span>
+                        <h4>Credits Wallet</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="wallet-balance">
+                            <span class="amount">$1,250.00</span>
+                            <button class="add-credits-btn">
+                                <span class="material-icons">add</span>
+                                Add Credits
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Sections -->
+        <div class="bottom-sections">
+            <!-- Last Transactions -->
+            <div class="section-card">
+                <div class="section-header">
+                    <span class="material-icons">receipt_long</span>
+                    <h3>Last Transactions</h3>
+                </div>
+                <div class="transactions-list">
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <span class="transaction-type">Card Check</span>
+                            <span class="transaction-time">2 minutes ago</span>
+                        </div>
+                        <span class="transaction-amount">-$0.50</span>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <span class="transaction-type">Credit Purchase</span>
+                            <span class="transaction-time">1 hour ago</span>
+                        </div>
+                        <span class="transaction-amount">+$100.00</span>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <span class="transaction-type">BIN Lookup</span>
+                            <span class="transaction-time">3 hours ago</span>
+                        </div>
+                        <span class="transaction-amount">-$0.25</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Updates -->
+            <div class="section-card">
+                <div class="section-header">
+                    <span class="material-icons">new_releases</span>
+                    <h3>Performance Updates</h3>
+                </div>
+                <div class="update-info">
+                    <div class="version-info">
+                        <span class="version">Version 1.0.0a</span>
+                        <span class="date">2025-02-07</span>
+                    </div>
+                    <p class="update-description">Major system update with new features and improvements:</p>
+                    <div class="update-list">
+                        <div class="update-item">
+                            <span class="material-icons">check_circle</span>
+                            <span>Bugs fixed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="material-icons">verified</span>
+                            <span>System completed</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="material-icons">add_circle</span>
+                            <span>New features added</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="material-icons">speed</span>
+                            <span>Performance optimizations</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="material-icons">security</span>
+                            <span>Security improvements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status of Systems -->
+            <div class="section-card">
+                <div class="section-header">
+                    <span class="material-icons">monitor_heart</span>
+                    <h3>Status of Systems</h3>
+                </div>
+                <div class="system-status">
+                    <div class="status-item">
+                        <div class="status-info">
+                            <span class="service-name">Card Checker API</span>
+                            <span class="status-time">just checked</span>
+                        </div>
+                        <div class="status-indicator online">
+                            <span class="material-icons">check_circle</span>
+                            <span>No problem found.</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-info">
+                            <span class="service-name">Card Formatter API</span>
+                            <span class="status-time">just checked</span>
+                        </div>
+                        <div class="status-indicator online">
+                            <span class="material-icons">check_circle</span>
+                            <span>No problem found.</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-info">
+                            <span class="service-name">BIN Lookup API</span>
+                            <span class="status-time">just checked</span>
+                        </div>
+                        <div class="status-indicator online">
+                            <span class="material-icons">check_circle</span>
+                            <span>No problem found.</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-info">
+                            <span class="service-name">Payment Services API</span>
+                            <span class="status-time">just checked</span>
+                        </div>
+                        <div class="status-indicator online">
+                            <span class="material-icons">check_circle</span>
+                            <span>No problem found.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

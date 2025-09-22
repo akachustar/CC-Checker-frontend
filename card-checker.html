@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH44 - Card Checker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="card-checker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <!-- Settings Section -->
+            <div class="sidebar-section">
+                <div class="settings-container">
+                    <div class="settings-icon">
+                        <span class="material-icons">settings</span>
+                    </div>
+                    <div class="settings-dropdown">
+                        <div class="dropdown-header">
+                            <span class="material-icons">palette</span>
+                            <span>Theme</span>
+                        </div>
+                        <div class="theme-options">
+                            <button class="theme-btn active" data-theme="dark">
+                                <span class="material-icons">dark_mode</span>
+                                <span>Dark</span>
+                            </button>
+                            <button class="theme-btn" data-theme="light">
+                                <span class="material-icons">light_mode</span>
+                                <span>Light</span>
+                            </button>
+                            <button class="theme-btn" data-theme="auto">
+                                <span class="material-icons">brightness_auto</span>
+                                <span>Auto</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="contact-icon">
+                    <span class="material-icons">telegram</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vertical Divider -->
+        <div class="sidebar-divider"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="nav-content">
+            <!-- Control Panel -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">space_dashboard</span>
+                    <span>Control Panel</span>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">miscellaneous_services</span>
+                    <span>Services</span>
+                </div>
+                <div class="nav-items">
+                    <a href="card-checker.html" class="nav-item active">
+                        <span class="material-icons">credit_card</span>
+                        <span>Card Checker</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">edit_note</span>
+                        <span>Card Formatter</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">credit_score</span>
+                        <span>BIN Lookup</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wallet -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">account_balance_wallet</span>
+                    <span>Wallet</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">shopping_bag</span>
+                        <span>Buy Credits</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">attach_money</span>
+                        <span>Add Balance</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">receipt</span>
+                        <span>Transactions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">info</span>
+                    <span>Information</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">support_agent</span>
+                        <span>Help Desk</span>
+                        <span class="material-icons expand-icon">expand_more</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">settings_account_box</span>
+                        <span>Account Settings</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">description</span>
+                        <span>Terms Of Service</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <img src="a-close-up-playboy-rabbit-logo-with-the-_JAGxHdOURI-VVZs_ma2EfQ_UE5nme7fRK2rXdq9_TESyg.jpeg" alt="SH44 Logo" class="header-logo">
+            </div>
+            
+            <div class="user-section">
+                <div class="user-info">
+                    <span class="username">Admin</span>
+                    <button class="sign-out-btn">
+                        <span class="material-icons">logout</span>
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Checker Content -->
+        <div class="checker-container">
+            <div class="checker-header">
+                <div class="header-icon">
+                    <span class="material-icons">credit_card</span>
+                </div>
+                <div class="header-text">
+                    <h1>Carding</h1>
+                    <h2>Card Checker</h2>
+                </div>
+            </div>
+
+            <div class="checker-layout">
+                <!-- Left Side - Card Input -->
+                <div class="checker-panel">
+                    <div class="input-section">
+                        <div class="input-header">
+                            <span class="material-icons">credit_card</span>
+                            <span>Card Checker</span>
+                        </div>
+                        
+                        <textarea 
+                            id="cardInput" 
+                            class="card-input" 
+                            placeholder='Use the "Card Formatter" in the menu to format and place your cards in the format "xxxxxxxxxxxxxxxx|xx|xxxx|xxx - checksy.cc".'
+                            rows="12"
+                        ></textarea>
+                        
+                        <div class="control-buttons">
+                            <button id="startCheck" class="btn-start">
+                                <span class="material-icons">play_arrow</span>
+                                Start Check
+                            </button>
+                            <button id="stopCheck" class="btn-stop" disabled>
+                                <span class="material-icons">stop</span>
+                                Stop Check
+                            </button>
+                        </div>
+                        
+                        <div class="progress-section" id="progressSection" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span id="progressText">Checking cards... 0/0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Counter -->
+                    <div class="results-counter">
+                        <div class="counter-item live">
+                            <div class="counter-number" id="liveCount">0</div>
+                            <div class="counter-label">Live Cards</div>
+                        </div>
+                        <div class="counter-item dead">
+                            <div class="counter-number" id="deadCount">0</div>
+                            <div class="counter-label">Dead Cards</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Information -->
+                <div class="info-panel">
+                    <div class="info-header">
+                        <span class="material-icons">info</span>
+                        <span>Information</span>
+                    </div>
+                    
+                    <div class="info-content">
+                        <div class="info-section">
+                            <p>Each time you initiate a card check process, <strong>2 credits</strong> will be deducted from your account. For each dead card, <strong>3 credits</strong> will be deducted from your account, and for each live card, <strong>2 credits</strong> will be deducted.</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <p>It is <strong>prohibited</strong> to verify cards generated by Namso-Gen or any other algorithm; if the system detects this, your account will be banned. You may only verify <strong>real cards</strong>.</p>
+                        </div>
+                        
+                        <div class="info-section">
+                            <p>We only accept <strong>VISA</strong>, <strong>MASTERCARD</strong>, <strong>AMEX</strong>, and <strong>DISCOVERY</strong> payment systems.</p>
+                        </div>
+                        
+                        <div class="note-section">
+                            <h4>Note:</h4>
+                            <ul>
+                                <li>The "Auth [No Charge]" only checks the existence of the card and does not make any withdrawals. Therefore, please check the card manually again.</li>
+                                <li>Some countries are blocked on the "Charge #1" server. If you receive an error message for this reason, please try again on another server.</li>
+                                <li>Every transaction you make is your responsibility; we accept no liability.</li>
+                                <li>We do not issue refunds except in cases of server errors.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="card-checker.js"></script>
+</body>
+</html>

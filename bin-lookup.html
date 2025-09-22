@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH44 - BIN Lookup</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="bin-lookup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <!-- Settings Section -->
+            <div class="sidebar-section">
+                <div class="settings-container">
+                    <div class="settings-icon">
+                        <span class="material-icons">settings</span>
+                    </div>
+                    <div class="settings-dropdown">
+                        <div class="dropdown-header">
+                            <span class="material-icons">palette</span>
+                            <span>Theme</span>
+                        </div>
+                        <div class="theme-options">
+                            <button class="theme-btn active" data-theme="dark">
+                                <span class="material-icons">dark_mode</span>
+                                <span>Dark</span>
+                            </button>
+                            <button class="theme-btn" data-theme="light">
+                                <span class="material-icons">light_mode</span>
+                                <span>Light</span>
+                            </button>
+                            <button class="theme-btn" data-theme="auto">
+                                <span class="material-icons">brightness_auto</span>
+                                <span>Auto</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="contact-icon">
+                    <span class="material-icons">telegram</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vertical Divider -->
+        <div class="sidebar-divider"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="nav-content">
+            <!-- Control Panel -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">space_dashboard</span>
+                    <span>Control Panel</span>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">miscellaneous_services</span>
+                    <span>Services</span>
+                </div>
+                <div class="nav-items">
+                    <a href="card-checker.html" class="nav-item">
+                        <span class="material-icons">credit_card</span>
+                        <span>Card Checker</span>
+                    </a>
+                    <a href="card-formatter.html" class="nav-item">
+                        <span class="material-icons">edit_note</span>
+                        <span>Card Formatter</span>
+                    </a>
+                    <a href="bin-lookup.html" class="nav-item active">
+                        <span class="material-icons">credit_score</span>
+                        <span>BIN Lookup</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wallet -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">account_balance_wallet</span>
+                    <span>Wallet</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">shopping_bag</span>
+                        <span>Buy Credits</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">attach_money</span>
+                        <span>Add Balance</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">receipt</span>
+                        <span>Transactions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="nav-section">
+                <div class="nav-header">
+                    <span class="material-icons">info</span>
+                    <span>Information</span>
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">support_agent</span>
+                        <span>Help Desk</span>
+                        <span class="material-icons expand-icon">expand_more</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">settings_account_box</span>
+                        <span>Account Settings</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="material-icons">description</span>
+                        <span>Terms Of Service</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <img src="a-close-up-playboy-rabbit-logo-with-the-_JAGxHdOURI-VVZs_ma2EfQ_UE5nme7fRK2rXdq9_TESyg.jpeg" alt="SH44 Logo" class="header-logo">
+            </div>
+            
+            <div class="user-section">
+                <div class="user-info">
+                    <div class="online-status">
+                        <span class="online-indicator"></span>
+                        <span class="online-text">2 users online now</span>
+                    </div>
+                    <span class="username">akachu</span>
+                    <button class="sign-out-btn">
+                        <span class="material-icons">logout</span>
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BIN Lookup Content -->
+        <div class="lookup-container">
+            <div class="lookup-header">
+                <div class="header-icon">
+                    <span class="material-icons">credit_score</span>
+                </div>
+                <div class="header-text">
+                    <h1>Carding</h1>
+                    <h2>BIN Lookup</h2>
+                </div>
+            </div>
+
+            <div class="lookup-layout">
+                <!-- Left Side - BIN Input -->
+                <div class="lookup-panel">
+                    <div class="input-section">
+                        <div class="input-header">
+                            <span class="material-icons">credit_score</span>
+                            <span>BIN Lookup</span>
+                        </div>
+                        
+                        <div class="bin-input-group">
+                            <input 
+                                type="text" 
+                                id="binInput" 
+                                class="bin-input" 
+                                placeholder="Enter BIN (first 6-8 digits)"
+                                maxlength="8"
+                            >
+                            <button id="lookupBtn" class="btn-lookup">
+                                <span class="material-icons">search</span>
+                                Lookup
+                            </button>
+                        </div>
+                        
+                        <div class="loading-section" id="loadingSection" style="display: none;">
+                            <div class="loading-spinner"></div>
+                            <span>Searching BIN database...</span>
+                        </div>
+                    </div>
+
+                    <!-- BIN Results -->
+                    <div class="results-section" id="resultsSection" style="display: none;">
+                        <div class="result-header">
+                            <span class="material-icons">info</span>
+                            <span>BIN Information</span>
+                        </div>
+                        
+                        <div class="result-grid">
+                            <div class="result-item">
+                                <div class="result-label">BIN</div>
+                                <div class="result-value" id="resultBin">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Brand</div>
+                                <div class="result-value" id="resultBrand">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Type</div>
+                                <div class="result-value" id="resultType">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Level</div>
+                                <div class="result-value" id="resultLevel">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Bank</div>
+                                <div class="result-value" id="resultBank">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Country</div>
+                                <div class="result-value" id="resultCountry">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Currency</div>
+                                <div class="result-value" id="resultCurrency">-</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-label">Prepaid</div>
+                                <div class="result-value" id="resultPrepaid">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Information -->
+                <div class="info-panel">
+                    <div class="info-header">
+                        <span class="material-icons">info</span>
+                        <span>Information</span>
+                    </div>
+                    
+                    <div class="info-content">
+                        <div class="info-section">
+                            <p>Our BIN database is up to date and provides you with the latest BIN information from banks. We use a system that is used worldwide. <strong>1 credit</strong> will be deducted from your account for each query.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+    <script src="bin-lookup.js"></script>
+</body>
+</html>
